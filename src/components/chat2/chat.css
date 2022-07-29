@@ -1,0 +1,138 @@
+.chat__windows {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15em;
+  flex-wrap: wrap;
+}
+
+.left__chat,
+.right__chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 400px;
+  height: 550px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border-top: 1px solid black;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.actions > input {
+  padding: 10px;
+  border: none;
+  font-size: 1.1em;
+  width: 400px;
+  border-radius: 10px;
+}
+.actions > input:focus {
+  border: none;
+}
+.send__button {
+  cursor: pointer;
+}
+.inactive {
+  height: 50px;
+  width: 400px;
+  background-color: white;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.inactive > .bell__icon {
+  margin: 15px 10px;
+}
+.window__chat {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.window__chat > .sent__messages {
+  margin: 20px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+.window__chat > .recieved__messages {
+  margin: 20px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.window__chat > .sent__messages > .message > .chatdata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 12px;
+  animation: band linear 0.5s;
+}
+.window__chat > .recieved__messages > .message > .chatdata {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: lightpink;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 12px;
+  animation: band linear 0.5s;
+}
+
+.field__date {
+  font-size: 10px;
+  text-align: right;
+}
+.emotions {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.message > .emotions {
+  display: none;
+}
+.message:hover > .emotions {
+  display: block;
+}
+.emoji__single {
+  margin-right: 5px;
+}
+.emoji__single:hover {
+  cursor: pointer;
+}
+
+@keyframes band {
+  0% {
+    opacity: 0;
+    transform: rotateY(-10);
+  }
+
+  40% {
+    opacity: 0.4;
+    transform: rotateY(-50);
+  }
+
+  80% {
+    opacity: 0.6;
+    transform: rotateY(-90);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
