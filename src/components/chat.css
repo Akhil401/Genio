@@ -68,6 +68,7 @@
 .smile {
   color: #fff;
   display: none;
+  cursor: pointer;
 }
 .data:hover > .smile {
   display: block;
@@ -113,6 +114,16 @@
 .emojis__row {
   display: flex;
 }
+.circle {
+  color: #08fdd8;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.circle:hover {
+  transform: scale(1.09);
+  color: black;
+}
+
 @keyframes band {
   0% {
     opacity: 0;

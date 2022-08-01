@@ -135,8 +135,8 @@ const App = () => {
 
         <PlusCircle
           size={35}
-          color="black"
           onClick={() => setCollapseLeft(!collapseleft)}
+          className="circle"
         />
       </div>
       <div className="right__side">
@@ -195,8 +195,8 @@ const App = () => {
         )}
         <PlusCircle
           size={35}
-          color="black"
           onClick={() => setCollapseRight(!collapseright)}
+          className="circle"
         />
       </div>
     </div>
