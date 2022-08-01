@@ -73,7 +73,10 @@
 .data:hover > .smile {
   display: block;
 }
-
+.smile__picker {
+  cursor: pointer;
+  margin-left: 8px;
+}
 .field__date {
   font-size: 10px;
   text-align: right;

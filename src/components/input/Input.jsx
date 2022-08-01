@@ -78,7 +78,7 @@ export const InputRight = ({
   };
   return (
     <div className="actions">
-      <Smile onClick={() => setPicker(!picker)} />
+      <Smile onClick={() => setPicker(!picker)} className="smile__picker" />
       {picker ? (
         <div>
           {emojis.map((a, i) => {
